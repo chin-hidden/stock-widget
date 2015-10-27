@@ -248,6 +248,7 @@ footer {
 
 aside {
   float: right;
+  width: 250px;
 }
 
 aside > div {
