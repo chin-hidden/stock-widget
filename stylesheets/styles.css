@@ -95,12 +95,6 @@ img {
   max-width:100%;
 }
 
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-}
-
 header ul {
   list-style:none;
   height:40px;
@@ -160,8 +154,8 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  width: 550px;
+  float:left;
   padding-bottom:50px;
 }
 
@@ -177,10 +171,7 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  width:250px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -252,4 +243,13 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+
+aside {
+  float: right;
+}
+
+aside > div {
+  margin-bottom: 1em;
 }

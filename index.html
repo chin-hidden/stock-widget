@@ -15,11 +15,18 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Widget cho mã CK</h1>
+        <h1>Widget cho mã chứng khoán</h1>
+      </header>
+
+      <aside>
         <p>Ví dụ với mã <strong>VND</strong>:</p>
 
         <div data-stock-widget data-symbol="VND"></div>
-      </header>
+
+        <p>Chế độ compact:</p>
+
+        <div data-stock-widget data-symbol="ACB" data-display-mode="compact"></div>
+      </aside>
 
       <section>
         <h3>Cách sử dụng</h3>
@@ -31,6 +38,20 @@
         <p>Sau đó tải script widget, nó sẽ tự động cài đặt các thẻ có chứa attribute <code>data-stock-widget</code>:</p>
 
         <pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">async</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>widget.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre>
+
+        Các data attribute có thể sử dụng:
+
+        <table>
+          <tr>
+            <td><code>data-symbol</code></td>
+            <td>Mã chứng khoán</td>
+          </tr>
+
+          <tr>
+            <td><code>data-display-mode</code></td>
+            <td>Chế độ hiển thị. <em>"full"</em> (default) hoặc <em>"compact"</em>.</td>
+          </tr>
+        </table>
 
         <p>Chúng tôi không dùng <code>iframe</code> nên các bạn có thể thoải mái tùy chỉnh kiểu dáng của widget cho phù hợp với trang web của mình.</p>
 
